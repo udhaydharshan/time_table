@@ -1,5 +1,5 @@
 # Ex03 Time Table
-# Date:27.11.2025
+# Date:28.11.2025
 # AIM
 To write a html webpage page to display your slot timetable.
 
@@ -23,6 +23,22 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
+views.py
+```
+def slot(request):
+    return render(request,'slot.html')
+```
+
+urls.py    
+```
+from Django.contrib import admin
+from Django.urls import path
+from slotapp import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('tt/', views.slot)
+]
+```
 ```html
 <!DOCTYPE html>
 <html lang="en">
