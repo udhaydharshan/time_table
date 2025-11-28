@@ -39,7 +39,8 @@ urlpatterns = [
     path('tt/', views.slot)
 ]
 ```
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
